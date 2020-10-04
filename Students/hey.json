@@ -1,0 +1,80 @@
+{
+	
+
+	"For loop": 
+	{
+		"prefix": "fl",
+		"body": [
+		 		"for(int i=0;i<n;i++)",
+				"{",
+				"\t$2",
+				"}" 
+		 	],
+		 	"description": "for loop layout"
+	},
+
+	"while loop": 
+	{
+		"prefix": "wh",
+		"body": [
+		 		"while(t--)",
+				"{",
+				"\t$2",
+				"}" 
+		 	],
+		 	"description": "while loop layout"
+	},
+
+	"template for CP": 
+	{
+		"prefix": "temp",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"#include <iostream>",
+			"#include <stdio.h>",
+			"#define lld long long int",
+			"#define ld  long int",
+			"#define d   int",
+			"#define sort(arr) sort(arr, arr+sizeof(arr)/sizeof(arr[0]))",
+			"using namespace std;",
+			"int main(void)  ",
+			"{",
+			"\tios_base::sync_with_stdio(false); ",
+			"\tcin.tie(0);",
+			"\tint t;",
+			"\tcin>>t;",
+			"\twhile(t--)",
+			"\t{",
+			"\t\tlld n;",
+			"\t\tcin>>n;",
+			"\t\tlld ans;",
+			"\t\t$2",
+			"\t\tcout<<ans<<endl;",
+			"\t}",
+			"\treturn 0;",
+			"}"
+		],
+		 	"description": "template"
+	},
+
+	"template for map": 
+	{
+		"prefix": "map",
+		"body": [
+			"map<lld,lld> mp;",
+			"for(lld i=0;i<n;i++)",
+			"{",
+			"\tcin>>mp[i];",
+			"\tmp[i]++;",
+			"\t$2",
+			"}",
+			"map<lld, lld>::iterator itr;",
+			"for (itr = mp.begin(); itr != mp.end(); ++itr)",
+			"{",
+			"\t",
+			"}"
+			],
+		 	"description": "map template"
+	},
+	
+}
